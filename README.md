@@ -11,7 +11,7 @@ The following demo is Kotlin TODO://
 - Clone as follows
 
 ```
-> git clone https://github.com/papicella/PivotalSpringBootJPA.git
+> git clone https://github.com/papicella/Kotlin-PivotalSpringBootJPA.git
 ```
 
 - package as shown below
