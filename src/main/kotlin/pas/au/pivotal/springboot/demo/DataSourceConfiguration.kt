@@ -13,7 +13,7 @@ import javax.sql.DataSource
 
 @Configuration
 @Profile("cloud")
-class DataSourceConfiguration {
+open class DataSourceConfiguration {
 
     @Bean
     open fun cloud(): Cloud {
@@ -22,7 +22,7 @@ class DataSourceConfiguration {
 
     @Bean
     @ConfigurationProperties(DataSourceProperties.PREFIX)
-    fun dataSource(): DataSource {
+    open fun dataSource(): DataSource {
         return cloud().getSingletonServiceConnector(DataSource::class.java, null)
     }
 
