@@ -16,7 +16,7 @@ import javax.sql.DataSource
 class DataSourceConfiguration {
 
     @Bean
-    fun cloud(): Cloud {
+    open fun cloud(): Cloud {
         return CloudFactory().cloud
     }
 
